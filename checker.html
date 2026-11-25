@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Elemental Check Non-metals</title>
+
+
+    <style>
+
+       body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px ;
+      background-image: url("https://i.pinimg.com/1200x/2f/1a/ab/2f1aabcfd7e9f14b895c89d00bb4bd45.jpg"); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+     }
+
+        .container {
+            background: rgba(255, 255, 255, 0.356);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        input {
+            width: 85%;
+            padding: 10px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #332b26;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d67f3c;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h2>Nonmetals Element Checker </h2>
+        <p>Enter a nonmetal element name (e.g., Hydrogen):</p>
+
+        <input type="text" id="element-input" placeholder="Type element name...">
+        <button py-click="get_element_info">Check Element</button>
+    
+        <div id="result"></div>
+    </div>
+
+        <py-script src="Element.py"></py-script>
+
+
+
+</body>
+</html>
