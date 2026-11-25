@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>RACCCONNSSS</title>
+</head>
+<body>
+
+
+<style>
+          body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("https://i.pinimg.com/736x/1b/03/94/1b0394fcb5a7a4abbba5d154590e635e.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+         }
+
+
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+
+        h1 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+
+        p {
+            margin: 6px 0 0 0;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+
+        main {
+            border: 2px solid #8c5a3c;
+            border-radius: 16px;
+            padding: 24px;
+            width: 100%;
+            max-width: 320px;
+            box-sizing: border-box;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #fdfdfd;
+            background: transparent;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+
+        input[type="text"]:focus {
+            border-color: #ffffff;
+        }
+
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid #8c5a3c;
+            border-radius: 10px;
+            background: transparent;
+            color: #8c5a3c;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            margin-top: 6px;
+        }
+
+
+        input[type="button"]:hover {
+            background-color: #8c5a3c;
+            color: #e0bc9f;
+        }
+
+
+        #result {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px dashed #8c5a3c;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+
+
+
+    </style>
+
+
+    <header>
+        <div class="reactor"></div>
+        <h1>Raccoonsclub</h1>
+        <p> 100326 raccoons🦝 </p>
+    </header>
+
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your first name"> <br>
+            <input type="text" id="last_name" placeholder="Enter your last name"> <br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+        </form>
+        <div id="result"></div>
+    </main>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
